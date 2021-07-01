@@ -1,13 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: hsl(210, 36%, 96%);
+  color: hsl(209, 61%, 16%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  margin: 1em 0;
+  padding: 2px 10px;
+  color: chartreuse;
+  text-align: center;
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-bottom: 2px solid lightskyblue;
+  text-shadow: 0 5px 15px rgba(25, 85, 7, 0.5);
+}
+
+.single-tour-container {
+  width: 95 vw;
+  border: 2px solid burlywood;
+  border-radius: 1em;
+  background: whitesmoke;
+  margin: 1em 1em;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.single-tour-container img {
+  width: 100%;
+  height: 5%;
+  max-height: 8%;
+  background-size: contain;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  margin-bottom: 0.1em;
+}
+
+.tour-info {
+  background-color: inherit;
+  padding: 1em;
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+}
+
+.tour-info .tour-info-upperrow {
+  background-color: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0.9em;
+}
+
+.tour-info-upperrow h3 {
+  line-height: 1;
+  font-weight: 700;
+  background-color: whitesmoke;
+}
+
+.tour-name {
+  font-size: 1rem;
+}
+
+.tour-price {
+  font-size: 1rem;
+  color: lightgreen;
+}
+
+.tour-info .tour-info-lowerrow {
+  background-color: inherit;
+}
+
+.tour-info-lowerrow > p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(167, 154, 154);
+  text-align: start;
+  line-height: 1.35;
+  background-color: inherit;
+}
+
+.btn-container {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  border-bottom-right-radius: 1em;
+  border-bottom-left-radius: 1em;
+}
+
+.not-interested-btn {
+  width: fit-content;
+  height: 2%;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 0.7em;
+  padding: 0.3em;
+  margin: auto;
+  margin-bottom: 1em;
+  background-color: whitesmoke;
+  color: tomato;
+  font-size: 0.8rem;
+  font-weight: 700;
+  background-color: whitesmoke;
+  border: 3px solid tomato;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.not-interested-btn:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  color: antiquewhite;
+  background-color: tomato;
+}
+
+@media only screen and (min-width: 650px) {
+  .single-tour-container {
+    width: 60 vw;
+    margin: 1.5em 6em;
+  }
+  .single-tour-container img {
+    width: 100%;
+    height: 5%;
+    max-height: 8%;
+    margin-bottom: 0.1em;
+  }
+
+  .tour-info-upperrow h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .not-interested-btn {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 850px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+  .single-tour-container {
+    width: 50 vw;
+    margin: 1.5em 10em;
+  }
+
+  .tour-info-upperrow h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1.1rem;
+  }
+
+  .not-interested-btn {
+    font-size: 1.15rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  .single-tour-container {
+    width: 40 vw;
+    margin: 1.5em 12em;
+  }
+
+  .tour-info-upperrow h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+
+  .not-interested-btn {
+    font-size: 1.2rem;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  h1 {
+    font-size: 3rem;
+  }
+  .single-tour-container {
+    margin: 1.5em 15em;
+  }
+
+  .tour-info-upperrow h3 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.8rem;
+  }
+
+  .not-interested-btn {
+    font-size: 1.23rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .single-tour-container {
+    margin: 1.5em 19em;
+  }
+}
+
+@media only screen and (min-width: 1294px) {
+  .single-tour-container {
+    margin: 1.5em 25em;
+  }
+  .single-tour-container img {
+    width: 100%;
+    height: 350px;
+    margin-bottom: 0.1em;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .tour-info-upperrow h3 {
+    font-size: 1.4rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  .not-interested-btn {
+    font-size: 1.1rem;
+  }
 }
