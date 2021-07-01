@@ -116,6 +116,46 @@ h1 {
   color: antiquewhite;
   background-color: tomato;
 }
+.loading {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  text-align: center;
+}
+.loading-img {
+  width: 20%;
+  height: 20%;
+  margin: auto;
+  margin-top: 30%;
+  animation: Rotate 1s infinite;
+}
+
+.refresh-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  left: 49%;
+}
+
+.refresh-icon:hover {
+  animation: Rotate 1s 1 backwards;
+}
+.center-class {
+  margin: auto;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.align-center {
+  margin: auto;
+  text-align: center;
+}
+
+@keyframes Rotate {
+  0% {
+    transform: rotateZ(-180deg);
+  }
+}
 
 @media only screen and (min-width: 650px) {
   .single-tour-container {
@@ -139,6 +179,13 @@ h1 {
   .not-interested-btn {
     font-size: 1.1rem;
   }
+
+  .loading-img {
+    width: 15%;
+    height: 15%;
+    margin: auto;
+    margin-top: 20%;
+  }
 }
 
 @media screen and (min-width: 850px) {
@@ -159,6 +206,12 @@ h1 {
 
   .not-interested-btn {
     font-size: 1.15rem;
+  }
+  .loading-img {
+    width: 10%;
+    height: 10%;
+    margin: auto;
+    margin-top: 20%;
   }
 }
 @media screen and (min-width: 1000px) {
@@ -199,6 +252,12 @@ h1 {
   .not-interested-btn {
     font-size: 1.23rem;
   }
+  .loading-img {
+    width: 8%;
+    height: 8%;
+    margin: auto;
+    margin-top: 20%;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .single-tour-container {
@@ -227,5 +286,11 @@ h1 {
 
   .not-interested-btn {
     font-size: 1.1rem;
+  }
+  .loading-img {
+    width: 8%;
+    height: 8%;
+    margin: auto;
+    margin-top: 15%;
   }
 }
