@@ -151,6 +151,14 @@ h1 {
   text-align: center;
 }
 
+.p-btn {
+  border: none;
+  background-color: whitesmoke;
+  color: aqua;
+  font-weight: 700;
+  font-size: inherit;
+}
+
 @keyframes Rotate {
   0% {
     transform: rotateZ(-180deg);
@@ -160,7 +168,7 @@ h1 {
 @media only screen and (min-width: 650px) {
   .single-tour-container {
     width: 60 vw;
-    margin: 1.5em 6em;
+    margin: 1.5em 4em;
   }
   .single-tour-container img {
     width: 100%;

@@ -7,6 +7,7 @@ export default function NoTours({ refreshPage }) {
       <img
         onClick={refreshPage}
         className="refresh-icon"
+        alt="refresh"
         src="https://img-premium.flaticon.com/png/512/1176/premium/1176428.png?token=exp=1625147358~hmac=ac27dd43c91d2cc3ffb8589627c1807f"
       />
       <div className="center-class">
